@@ -21,10 +21,13 @@ function inicio(){
         
     
        
-    }, true)
+    }, true);
     document.getElementById("button4").addEventListener("click", function(){
       verAlert('alerta1',0);
-    }, true)
+    }, true);
+    document.getElementById("borrar").addEventListener("click", function(){
+        borrarTexto('mensaje','mensajeEncriptado');
+      }, true);
 }
 
 function encriptar(texto){
@@ -73,7 +76,13 @@ function copiarTexto(texto){
     navigator.clipboard.writeText(texto).then((res) => verAlert('alerta1',1)).catch((err) => verAlert('alerta1',1) );
     mensajeEncriptado.value = ""; 
     document.getElementById("verButton").style.display = 'none';
-    mensajeEncriptado.style.backgroundImage = 'url(image/Muñeco.png) ';
+    mensajeEncriptado.style.backgroundImage = 'url(image/Muñeco.png) ';      
+}
 
-    
+function borrarTexto(texto1,texto2){
+    obj= document.getElementById(texto1);
+    obj2= document.getElementById(texto2);
+    obj.value = "";
+    obj2.value = "";
+    mensajeEncriptado.style.backgroundImage = 'url(image/Muñeco.png) ';  
 }
