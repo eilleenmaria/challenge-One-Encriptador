@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+    <script src="./encriptador.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <main class="desktop">
+        <header class="header1">
+            <div class="top">
+                <img class="vectorHeader" src="image/Vector.png" alt="vector Alura">
+            </div>
+        </header>
+        <div class="layautLogo">
+            <div class="containLogo">
+                <img class="vectorAlura" src="image/Vector.png" alt="vector Alura">
+
+            </div>
+        </div>
+        <textarea   id="mensaje" name="mensaje"  class="text1" cols="5" rows="4"placeholder="Ingresa texto aqui"></textarea>
+        <div class="container1">
+            <div class="exclamacion">
+                <div class="groupExclam">
+                    <img class="vectorAlerta" src="image/Vector (2).png" alt="vector Alerta">
+                </div>
+            </div>
+            <p class="textAlerta">Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="container3">
+            <button id="encriptar"  class="button1" >
+            <a class="textButton1">Encriptar</a></button>
+            <button id="desencriptar" class="button2"><a class="textButton2">Desencriptar</a></button>
+            <button id="borrar" class="button1"><a class="textButton1">Borrar</a></button>
+
+        </div>
+        <div class="container5">
+            <textarea  id="mensajeEncriptado" cols="2" rows="4"  class="text2" placeholder="No hay mensaje para mostrar  Introduce texto"></textarea>
+            <button id="verButton" class="button3" >
+            <a class="textButton2">Copiar</a></button>            
+        </div> 
+        <span id="alerta1" class="mensaje">
+            <p class="textAlert">El texto ha sido copiado</p>
+            <button  id ="button4" class="button4" >Cerrar</button>
+        </span>
+  
+    </main>
+</body>
+</html>
