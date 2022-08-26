@@ -25,6 +25,9 @@ function inicio(){
     document.getElementById("button4").addEventListener("click", function(){
       verAlert('alerta1',0);
     }, true);
+    document.getElementById("buttonError").addEventListener("click", function(){
+        verAlert('alerta2',0);
+      }, true);
     document.getElementById("borrar").addEventListener("click", function(){
         borrarTexto('mensaje','mensajeEncriptado');
       }, true);
@@ -73,7 +76,7 @@ function desencriptar(texto){
 
 
 function copiarTexto(texto){ 
-    navigator.clipboard.writeText(texto).then((res) => verAlert('alerta1',1)).catch((err) => verAlert('alerta1',1) );
+    navigator.clipboard.writeText(texto).then((res) => verAlert('alerta1',1)).catch((err) => verAlert('alerta2',1) );
     mensajeEncriptado.value = ""; 
     document.getElementById("verButton").style.display = 'none';
     mensajeEncriptado.style.backgroundImage = 'url(image/Muñeco.png) ';      

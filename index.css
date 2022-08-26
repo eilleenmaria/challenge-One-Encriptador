@@ -194,7 +194,7 @@ body{
     align-self: stretch;
     flex-grow: 0;       
 }
-.mensaje{
+.mensajeAlerta{
     position: absolute;
     overflow: hidden;
     display: block;

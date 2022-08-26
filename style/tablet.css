@@ -85,7 +85,7 @@
         .text1{            
             position: absolute;
             width:90%;
-           height: 20%;          
+            height: 20%;          
             margin-left: 1.5rem;
             margin-right: 1.5rem;
             top: 9.5rem ;            
@@ -93,17 +93,14 @@
             font-size: 32px;          
             color: #0A3871;
             }
-            .mensaje{
+            .mensajeAlerta{
                 
                 width:42%;
                 height:3.5rem;
                 left: 6rem;
-                
                 top: 5rem;
                 right: auto;
-                background-color:lightgray;
-              
-                
+                background-color:lightgray;               
             }
             .textAlert{
                 font-size: 0.8em;
